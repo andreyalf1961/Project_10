@@ -16,12 +16,14 @@ class Knight(Thread):
         while v > 0:
             time.sleep(1)
             v -= self.power
+            if v < 0:
+                v = 0
             d += 1
             print(f'{self.name} сражается {d} дней(дня)..., осталось {v} воинов.\n')
         print(f'{self.name} одержал победу спустя {d} дней(дня)!')
 
 
-first_knight = Knight('Sir Lancelot', 10)
+first_knight = Knight('Sir Lancelot', 45)
 second_knight = Knight('Sir Galahad', 20)
 first_knight.start()
 second_knight.start()
