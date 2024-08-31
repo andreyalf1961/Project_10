@@ -25,10 +25,10 @@ print(f'работа функций {time_del} сек')
 
 
 time_st = time.time()
-thr_f = Thread(target=write_words, args=(10, 'example.5txt'))
-thr_s = Thread(target=write_words, args=(30, 'example.6txt'))
-thr_t = Thread(target=write_words, args=(200, 'example.7txt'))
-thr_fr = Thread(target=write_words, args=(100, 'example.8txt'))
+thr_f = Thread(target=write_words, args=(10, 'example5.txt'))
+thr_s = Thread(target=write_words, args=(30, 'example6.txt'))
+thr_t = Thread(target=write_words, args=(200, 'example7.txt'))
+thr_fr = Thread(target=write_words, args=(100, 'example8.txt'))
 
 thr_f.start()
 thr_s.start()
